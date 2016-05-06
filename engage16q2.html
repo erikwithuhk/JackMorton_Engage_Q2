@@ -69,17 +69,26 @@
 			User styles
 			 =======================*/
 
-			 /* Layout styles =======================*/
+			 /* Global styles =======================*/
 
 			body {
 				background-color: #e7e8e9;
 			}
 
+			a {
+				color: #ff5000;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+
 			img {
 				display: block;
+				font-family: arial, sans-serif;
+				font-size:24px;
 			}
 
 			ol, ul {
+				font-size: 1em;
 				padding-top: 1.5625em;
 				padding-bottom: 1.5625em;
 				margin-top: 0;
@@ -95,25 +104,55 @@
 				background-color: #ffffff;
 			}
 
+			.divider {
+				border-bottom-color: #d2d4d7;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+			}
+
+			.padding-left-right-20px {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.text {
+				color: #333d47;
+				font-family: arial, sans-serif;
+				font-weight: normal;
+				mso-line-height-rule: exactly;
+				-webkit-text-size-adjust: none;
+			}
+
+			.preheader-text {
+				font-size: 10px;
+				line-height: 15px;
+				text-align: right;
+			}
+
+			.preheader-text a {
+				color: #333d47;
+				font-weight: normal;
+				text-decoration: underline;
+			}
+
+			.body-text, .divider {
+				font-size: 16px;
+				line-height: 25px;
+				text-align: left;
+			}
+
+			.small-text {
+				font-size: 12px;
+				line-height: 20px;
+				text-align: left;
+			}
+
 			#preheader {
 				background-color: #e7e8e9;
 				padding-top: 10px;
 				padding-bottom: 10px;
 			}
 
-		  .preheader-text {
-		    color: #333d47;
-		    font-size: 10px;
-		    line-height: 15px;
-		    mso-line-height-rule: exactly;
-		    text-align: right;
-		    -webkit-text-size-adjust: none;
-		  }
-		  .preheader-text a {
-		    color: #333d47;
-		    font-weight: normal;
-		    text-decoration: underline;
-		  }
 
 			#jack_morton_logo {
 				padding-left: 20px;
@@ -125,7 +164,6 @@
 				font-family: 'arial black', arial;
 				font-size: 24px;
 			}
-
 			.button td {
 				padding-top: 9px;
 				padding-right: 12px;
@@ -141,47 +179,6 @@
 				background-color: #ff5000;
 			}
 
-			.horizontal-rule {
-				border-bottom-color: #333d47;
-				border-bottom-style: solid;
-				border-bottom-width: 1px;
-				width: 100%;
-			}
-
-			.padding-left-right-20px {
-				padding-left: 20px;
-				padding-right: 20px;
-			}
-
-
-
-			/* Typography =======================*/
-
-			body td {
-				color: #333d47;
-				font-family: arial, sans-serif;
-				font-size: 12px;
-				font-weight: normal;
-				line-height: 14px;
-				text-align: left;
-			}
-
-			a {
-				color: #ff5000;
-				font-weight: bold;
-				text-decoration: underline;
-			}
-
-			ol, ul {
-				font-family: arial, sans-serif;
-				font-size: 1em;
-			}
-
-			img {
-				font-family: arial, sans-serif;
-				font-size:24px;
-			}
-
 			.button a {
 				color: #ffffff;
 				font-family: arial, sans-serif;
@@ -194,11 +191,6 @@
 
 			.orange {
 				color: #ff5000;
-			}
-
-			#preheader a {
-				color: #333d47 !important;
-				font-weight: normal !important;
 			}
 
 
@@ -217,7 +209,7 @@
 					padding-right: 5px;
 				}
 
-				#header_image img {
+				.full-width-image img {
 					width: 100% !important;
 					height: auto !important;
 				}
@@ -239,12 +231,12 @@
 								<td align="right" valign="top" id="preheader">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="right" class="preheader-text" style="padding-left:500px;">
+											<td align="right" class="text preheader-text" style="padding-left:500px;">
 												Volume 3, Q2 2016 issue
 											</td>
 										</tr>
 										<tr>
-											<td align="right" class="preheader-text">
+											<td align="right" class="text preheader-text">
 												<a href="*|ARCHIVE|*" target="_blank">View in browser</a>
 											</td>
 										</tr>
@@ -286,33 +278,35 @@
 								</td>
 							</tr>
 
-							<tr id="header_image">
+							<tr>
 								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:14px">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="center" valign="top">
-												<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_map_600x333.png" alt="Jack's on the move" border="0" width="600" height="333" style="display:block; background-color:#333d47; color:#ffffff; font-size:40px; width:600px; height:333px;" />
+											<td align="center" valign="top" class="full-width-image">
+												<a href="https://vimeo.com/165588526/33aeaf0b66" target="_blank"><img src="images/Engage16Q2_Josh_Screenshot.jpg" alt="Diversity &amp; inclusion" border="0" width="600" height="338" style="background-color:#333d47; border:none; color:#ffffff; font-size:40px; width:600px; height:338px;" /></a>
 											</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 
-							<tr id="intro_text">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:15px;">
+							<tr>
+								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:25px;">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="center" valign="top" class="horizontal-rule">
+											<td align="center" valign="top">
 												<table border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
 														<td align="left" valign="top" style="padding-right:30px;">
 															<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_quotes_122x129.png" alt="Quote" border="0" height="129" style="background-color:#6edad5; color:#ffffff; height:129px; width:122px;" width="122" />
 														</td>
-														<td align="left" valign="top" style="padding-bottom:30px;">
+														<td align="left" valign="top">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
-																	<td align="left" valign="top" style="font-family:arial,sans-serif; font-size:14px; line-height:20px; mso-line-height-rule:exactly; text-align:left;">
-																		One of the benefits of being a global agency is the chance to <strong>experience new cultures and environments</strong> either by traveling onsite&nbsp;or meeting with current and potential clients. In some cases, we&nbsp;are able to take this a step further by facilitating short-term and permanent inter-office transfers within our network. For many, <strong>this rare opportunity is energizing, sparks creativity, and offers insights and fresh perspectives that make our work extraordinary</strong>. In 2015, we supported nearly 20 permanent and 5 short-term transfers. Learn more about inter-office transfers by reaching out to your local HR&nbsp;representative.
+																	<td align="left" valign="top" class="text body-text">
+																		<strong>Welcome to this special edition of Engage that focuses on diversity and inclusion—a key priority for our agency.</strong><br>
+																		<br>
+																		Take a moment to hear from our Chairman &amp; CEO Josh McCall about the importance of creating and reinforcing a diverse and inclusive environment at Jack, before reading the talent news from across our global network.
 																	</td>
 																</tr>
 															</table>
@@ -325,86 +319,11 @@
 								</td>
 							</tr>
 
-							<tr id="12in16_header">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:20px;">
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top" style="background-color:#c33a32; color: #ffffff; font-size:20px; font-weight:bold; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												#12in16
-											</td>
-										</tr>
-										<tr>
-											<td align="center" valign="top" style="background-color:#c33a32; color: #ffffff; font-size:14px; font-weight:bold; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												Add 12 hours of training to your 2016 goals. That’s just one hour per month!<br>
-												Here are three easy steps to help you reach this goal:
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-
-							<tr id="12in16_1">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:10px;">
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top" style="padding-right:10px;">
-												<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_12in16_1_193x71.png" alt="1" border="0" height="71" style="height:71px; width:193px;" width="193" />
-											</td>
-											<td align="center" valign="top" style="background-color:#f3d7d6; color: #333d47; font-size:14px; font-weight:normal; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												<strong>Spend the next 15 minutes exploring</strong> the videos, books, webinars, and eLearning available on our <a href="http://9nl.me/xwph" target="_blank" style="color:#333d47; font-weight:bold; text-decoration:underline;">Learning Management System</a>.
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-
-							<tr id="12in16_2">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:10px;">
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top" style="padding-right:10px;">
-												<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_12in16_2_193x71.png" alt="2" border="0" height="71" style="height:71px; width:193px;" width="193" />
-											</td>
-											<td align="center" valign="top" style="background-color:#f3d7d6; color: #333d47; font-size:14px; font-weight:normal; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												<strong>Create a list of subjects</strong> you want to learn more about this year, including those from the LMS, industry talks, networking events, and internal training sessions. Add to this list as things come up or occur to you throughout the year.
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-
-							<tr id="12in16_3">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:10px;">
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top" style="padding-right:10px;">
-												<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_12in16_3_193x71.png" alt="3" border="0" height="71" style="height:71px; width:193px;" width="193" />
-											</td>
-											<td align="center" valign="top" style="background-color:#f3d7d6; color: #333d47; font-size:14px; font-weight:normal; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												<strong>Sign up!</strong> When your receive the Monthly Training announcement, immediately sign up for one of the webinars listed in the email or identify one hour of training from your list and block your calendar to complete it in that month.
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-
-							<tr id="12in16_closing">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:10px; padding-bottom:10px;">
-									<table border="0" cellpadding="0" cellspacing="0" width="100%">
-										<tr>
-											<td align="center" valign="top" style="background-color:#ffffff; color: #333d47; font-size:14px; font-weight:bold; line-height:20px; mso-line-height-rule:exactly; text-align:left;">
-												By following these three simple steps, you can make training both a priority and easy. And at the end of the year, you’ll find you achieved those 12 hours and acquired new knowledge to further your career.
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-
 							<tr>
-								<td class="padding-left-right-20px" align="center" valign="top">
+								<td align="center" valign="top" style="padding-left: 120px; padding-right: 120px;">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td class="horizontal-rule" align="center" valign="top">
+											<td align="center" valign="top" class="text divider">
 												&nbsp;
 											</td>
 										</tr>
@@ -412,25 +331,59 @@
 								</td>
 							</tr>
 
-							<tr id="performance-reviews">
-								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:20px;">
+							<tr>
+								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:25px;">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="center" valign="top">
-												<img src="http://mktgimages.jackmorton.com/engage_hr-news/2016_q1/engage16q1_performance-reviews_600x176.png" alt="Performance reviews—It’s that time of the year again! The annual performance management process provides you with an important opportunity to discuss your performance against last year’s goals, set new objectives and expectations for the coming year, and ensure your continued progress towards your own career aspirations." border="0" height="176" style="height:176px; width:600px;" width="600" />
+											<td align="center" valign="top" class="full-width-image">
+												<img src="images/Engage16Q2_women_leadership_600x173.png" alt="Women in leadership" border="0" width="600" height="173" style="background-color:#333d47; border:none; color:#ffffff; font-size:40px; width:600px; height:173px;" />
 											</td>
 										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:25px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="left" valign="top" style="background-color:#d3d5d7; color: #333d47; font-size:14px; font-weight:normal; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
-												<strong>Things to consider:</strong><br>
-												• Make a list of all the achievements and accomplishments you had throughout the last year.<br>
-												• Identify areas where you would like to expand your skills, experience and expertise.<br>
-												• Think about your goals for 2016 and how they can help you to develop in your career.
+											<td align="center" valign="top" class="text body-text">
+												On March 1, a group from Jack Boston attended the Women’s Leadership Forum at the Seaport World Trade Center. The theme was #NOFILTER and the day was dedicated to recognizing and honoring inspirational individuals for their leadership qualities and accomplishments.
 											</td>
 										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="padding-left-right-20px" align="center" valign="top" style="padding-top:25px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tr>
-											<td align="left" valign="top" style="background-color:#ffffff; color: #333d47; font-size:14px; font-weight:normal; line-height:20px; mso-line-height-rule:exactly; text-align:left; padding-top:10px;">
-												Preparing properly for your review will benefit both you and your manager and will result in a more meaningful dialogue around your performance, your goals and your career progression at Jack. <strong>Your growth and development are key to your career and essential for our success.</strong>
+											<td align="center" valign="top" class="text small-text" style="width:285px; padding-right:30px;">
+												The honorees have made a significant contribution to their field and shared their unique personal stories with the 1000+ women in attendance- including six representatives from Jack Boston who heard raw, unfiltered, truthful, and empowering stories from inspirational individuals.<br>
+												<br>
+												The theme of teamwork and support was best highlighted by the conversation with Linda Boff, GE’s Chief Marketing officer, who leads customer experience, marketing and brand for the company.<br>
+												<br>
+												Linda advised attendees to work for a person, not a company, stressing the importance of finding someone who is a visionary and a mentor to foster and guide your career and growth. This advice in turn inspired our attendees to think about how we are building community for women at Jack, including how we support one another through career growth and personal development. What role do we play as mentors to women entering the marketing world, whether through every day interactions in the office, recruiting events, and our personal networks?
+											</td>
+											<td align="center" valign="top" class="text small-text" style="width:285px;">
+												Want more inspiration from WLF on women daring to do great things? <a href="https://www.youtube.com/watch?v=W_ppUwX4DH8" target="_blank">Check out Sasha DiGiulian</a>, who in October 2011 at 18 years old became the first American woman to scale the rock formation known as Pure Imagination in the Red River Gorge of Kentucky. It's considered one of the most difficult climbs in the country and took Sasha three days, during which she found inspiration in the words of Theodore Roosevelt:<br>
+												<br>
+												It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena… because there is no effort without error and shortcoming; but who does actually strive to do the deeds&hellip;<br>
+												<br>
+												You can find all the speaker videos on the <a href="http://theadclub.org/womens2016/speaker-videos/" target="_blank">Ad&nbsp;Club&nbsp;site</a>.
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center" valign="top" style="padding-left: 120px; padding-right: 120px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="center" valign="top" class="text divider">
+												&nbsp;
 											</td>
 										</tr>
 									</table>
